@@ -1,0 +1,35 @@
+* {
+    font-size: 22px;
+    font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+.navbar {
+    padding: 0 0.1rem;
+}
+
+.icon-nav {
+    width: 80px;
+    height: 75px;
+}
+
+.paginaciones {
+    align-items: center;
+}
+
+.paginaciones li {
+    margin: 0 10px;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatar-user {
+    margin: 0 25px;
+}
