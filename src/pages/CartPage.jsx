@@ -53,7 +53,7 @@ export const CartPage = () => {
     <div className="container">
     {cartItems.length > 0 ? (
     <table className="table">
-        <thead className="table-dark">
+        <thead className="table-primary">
             <tr>
                 <th scope="col">Nombre</th>
                 <th scope="col">Precio</th>

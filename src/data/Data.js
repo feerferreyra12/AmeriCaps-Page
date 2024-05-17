@@ -59,7 +59,7 @@ export const ProductsData = [
       amount: 0,
       name: "Gorra Lacoste",
       img: '/src/assets/gorra-lacoste-2.webp',
-      hoveredImage: '/src/assets/gorra-lacoste-6.jpg',
+      hoveredImage: '/src/assets/gorra-lacoste-6.webp',
       category: "gorra"
     },
     {
@@ -68,7 +68,7 @@ export const ProductsData = [
       amount: 0,
       name: "Gorra Lacoste",
       img: '/src/assets/gorra-lacoste-3.webp',
-      hoveredImage: '/src/assets/gorra-lacoste-7.jpg',
+      hoveredImage: '/src/assets/gorra-lacoste-7.webp',
       category: "gorra"
     },
     {
