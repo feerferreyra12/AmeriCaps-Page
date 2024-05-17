@@ -1,0 +1,28 @@
+.productsContainer {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  
+  .container-product {
+    padding: 20px; 
+  }
+  
+  .card {
+    max-width: 100%; 
+    margin-bottom: 20px; 
+    align-items: center;
+    
+  }
+  
+  .title-productos {
+    text-align: center;
+    font-size: 32px;
+    margin-top: -25px;
+    margin-bottom: 35px;
+    margin-left: -6%;
+  }
+  
+  .card-media {
+    transition: transform 0.3s ease-in-out;
+  }
+  

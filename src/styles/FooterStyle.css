@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    height: auto; 
+    background-color: #0D6EFD;
+    padding: 25px 0; 
+    text-align: center;
+}
+
+.footer h4 {
+    margin: 10px 0; 
+    padding: 0 15px; 
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5; 
+    max-width: 90%; 
+    margin: 0 auto; 
+}
+
+.icon-redes{
+    margin: 25px 25px;
+    padding: 5px 15px;
+}

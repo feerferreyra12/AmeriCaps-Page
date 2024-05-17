@@ -1,0 +1,24 @@
+.inicio-img {
+    width: 100%;
+    height: auto; /
+  }
+  
+  .info-envios h4 {
+    font-size: 22px;
+  }
+  
+  .info-envios p {
+    font-size: 16px;
+  }
+  
+  .color-info {
+    padding:  40px 0 40px 0; 
+    background-color: #0D6EFD;
+    color: #fff;
+  }
+
+  .info-envios svg{
+    width: 40px;
+    height: 40px;
+    color: white;
+  }

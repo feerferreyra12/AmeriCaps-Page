@@ -1,0 +1,37 @@
+.container {
+    margin-top: 50px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.table td {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-container button {
+    margin: 0 10px;
+}
+
+.cartVacio{
+  margin-top: 25%;
+}
