@@ -87,7 +87,7 @@ export const CartPage = () => {
                 ))
             }
             <tr>
-            <th><b>TOTAL: </b></th>
+            <th scope="row" className="table-primary"><b>TOTAL: </b></th>
             <td></td>
             <td></td>
             <td>${total}</td>

@@ -5,6 +5,8 @@ import {NavBar} from './components/NavBar'
 import { CartProvider } from "./context/CartProvider";
 import { ProductsPage } from "./pages/ProductsPage";
 import { LoginPage } from "./pages/LoginPage";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 

@@ -1,22 +1,41 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Badge } from "@mui/material"
 import { ShoppingCart } from "@mui/icons-material"
 import { Avatar } from '@mui/material';
 import { CartContext } from "../context/CartContext";
 import { useContext, useEffect, useState } from "react";
 import { grey } from '@mui/material/colors'
+import { ModalAlert } from './ModalAlert'
 import '../styles/NavBarStyle.css'
+
+
+
 
 export const NavBar = (  ) => {
 
     const [productsLength, setProductsLength] = useState(0);
     const { cartItems } = useContext(CartContext);
+    const navigate = useNavigate();
+    const [showAlert, setShowAlert] = useState(false);
+
 
     useEffect(() => {
         setProductsLength(
             cartItems.reduce((previous, current) => previous + current.amount, 0)
         );
     }, [cartItems]);
+
+    const handleCartClick = () => {
+        if (productsLength === 0) {
+          setShowAlert(true);
+        } else {
+          navigate('/carrito-de-compras');
+        }
+      };
+    
+      const handleCloseAlert = () => setShowAlert(false);
+
+
 
     return (
         <nav  className=" navbar navbar-expand-lg  bg-primary" data-bs-theme="dark">
@@ -46,16 +65,17 @@ export const NavBar = (  ) => {
                 <div>
                     
                 </div>
-                    <NavLink to='/carrito-de-compras' className="nav-link">
+                    <button onClick={handleCartClick} className="nav-link btn" style={{ backgroundColor: 'transparent', border: 'none', padding: 0 }}>
                         <Badge className="carrito-logo" badgeContent={productsLength} color="secondary">
                             <ShoppingCart sx={{ color: grey[50] }} />
                         </Badge>
-                    </NavLink>
+                    </button>
                     <NavLink to='/login' className="nav-link">
                         <Avatar className="avatar-user" src="/broken-image.jpg" />
                     </NavLink>
                 </div>
             </div>
+            <ModalAlert show={showAlert} handleClose={handleCloseAlert} />
         </nav>
     )
 }
