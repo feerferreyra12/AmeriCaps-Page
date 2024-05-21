@@ -1,8 +1,45 @@
-.inicio-img {
-    width: 100%;
-    height: auto; /
-  }
-  
+.Hero-home {
+  position: relative;
+  display: inline-block; /* Para que el contenedor se ajuste al contenido */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el contenido horizontal y verticalmente */
+  z-index: 10;
+  color: white; /* Asegúrate de que el texto sea visible sobre la imagen */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade sombra para mejor legibilidad */
+}
+
+.hero-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  font-size: 1.2em;
+}
+
+.hero-img {
+  width: 100%; /* Mantiene el ancho del contenedor */
+  height: auto; /* Mantiene la proporción original */
+  display: block;
+}
+
+.hero-content h1 {
+  font-size: 6rem;
+  font-family: "Freeman", sans-serif;
+}
+
+.hero-content p {
+  margin-top: -35px;
+  font-size: 3rem;
+}
+
+
   .info-envios h4 {
     font-size: 22px;
   }

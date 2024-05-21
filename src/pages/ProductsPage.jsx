@@ -46,7 +46,7 @@ export const ProductsPage = () => {
                         label="Filter by Category"
                         onChange={handleChange}
                     >
-                        <MenuItem value="">All</MenuItem>
+                        <MenuItem value="">Todo</MenuItem>
                         {uniqueCategories.map(category => (
                             <MenuItem key={category} value={category}>{category}</MenuItem>
                         ))}

@@ -5,7 +5,13 @@ import '../styles/HomePageStyle.css'
 export const HomePage = () => {
   return (
     <div>
-      <img src='/src/assets/inicio-img.webp' className='inicio-img'/>
+    <div className='Hero-home'>
+    <div className='hero-content'>
+        <h1 className='hero-title'>AmeriCaps</h1>
+        <p className='hero-description'>Indumentaria Unisex</p>
+    </div>
+    <img src='/src/assets/hero-img.jpg' className='hero-img '/>
+    </div>
       <div className="color-info">
         <div className="container text-center info-envios">
           <div className="row">
